@@ -10,4 +10,3 @@ app = Flask(__name__)
 def index():
     return 'Hello Flask on Google App Engine!'
 
-run_wsgi_app(app)

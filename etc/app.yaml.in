@@ -1,7 +1,11 @@
 application: ${common:application}
 version: 1
-runtime: python
+runtime: python27
 api_version: 1
+threadsafe: true
 handlers:
 - url: .*
-  script: main.py
+  script: main.app
+libraries:
+- name: jinja2
+  version: "2.6"
